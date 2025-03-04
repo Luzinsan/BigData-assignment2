@@ -369,13 +369,337 @@
           "triggerUpdateColumns": false,
           "required": true,
           "GUID": "107c9f9f-f308-4065-a147-bba3571793b6",
+          "error": {},
           "childRelationships": [
-            "4006dbdc-3557-4f7e-b38f-55dfbd0d8fc9",
-            "11532111-6673-4743-a175-810d8cf58b0b",
-            "c33dd03a-44bd-4207-ac7c-0d630c2e25cb",
-            "ed80d4dc-e94a-4b0a-8808-a0bccf3b0d75"
+            "628fa001-de0f-4e22-bc06-53b548d8dff8"
+          ]
+        },
+        {
+          "name": "subject_length",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "smallint",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey",
+            "triggerUpdateColumns"
           ],
+          "compositePartitionKey": false,
+          "triggerUpdateColumns": false,
+          "required": false,
+          "GUID": "b2d450b8-6c43-4c25-a3df-7aca2ffc80df",
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "foreignCollection": "",
+          "foreignField": []
+        },
+        {
+          "name": "subject_with_personalization",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "childType": "boolean",
+          "type": "boolean",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey",
+            "triggerUpdateColumns"
+          ],
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "triggerUpdateColumns": false,
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "required": false,
+          "GUID": "e291dc7e-62f3-4106-b79c-4bc01fd080e0",
+          "foreignCollection": "",
+          "foreignField": []
+        },
+        {
+          "name": "subject_with_deadline",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "childType": "boolean",
+          "type": "boolean",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey",
+            "triggerUpdateColumns"
+          ],
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "triggerUpdateColumns": false,
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "required": false,
+          "GUID": "2f814a9a-64d8-41b2-9150-e5d24e75b1d1",
+          "foreignCollection": "",
+          "foreignField": []
+        },
+        {
+          "name": "subject_with_emoji",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "childType": "boolean",
+          "type": "boolean",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey",
+            "triggerUpdateColumns"
+          ],
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "triggerUpdateColumns": false,
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "required": false,
+          "GUID": "ff22222a-675d-4d9a-b30e-faf5d93e7eb3",
+          "foreignCollection": "",
+          "foreignField": []
+        },
+        {
+          "name": "subject_with_bonuses",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "childType": "boolean",
+          "type": "boolean",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey",
+            "triggerUpdateColumns"
+          ],
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "triggerUpdateColumns": false,
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "required": false,
+          "GUID": "a0ced3ef-197a-4838-9137-305cb91fdbe8",
+          "foreignCollection": "",
+          "foreignField": []
+        },
+        {
+          "name": "subject_with_discount",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "childType": "boolean",
+          "type": "boolean",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey",
+            "triggerUpdateColumns"
+          ],
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "triggerUpdateColumns": false,
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "required": false,
+          "GUID": "66c50c0f-883c-41ec-9029-d598efa811cc",
+          "foreignCollection": "",
+          "foreignField": []
+        },
+        {
+          "name": "subject_with_saleout",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "childType": "boolean",
+          "type": "boolean",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey",
+            "triggerUpdateColumns"
+          ],
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "triggerUpdateColumns": false,
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "required": false,
+          "GUID": "44c0b28d-5528-49bb-a4fd-730f4c9bfbb5",
+          "foreignCollection": "",
+          "foreignField": []
+        },
+        {
+          "name": "position",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "smallint",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey",
+            "triggerUpdateColumns"
+          ],
+          "compositePartitionKey": false,
+          "triggerUpdateColumns": false,
+          "required": false,
+          "GUID": "5d672507-2e56-4d33-9aed-4894bad0aa32",
+          "default": 1,
+          "foreignCollection": "",
+          "foreignField": [],
           "error": {}
+        },
+        {
+          "name": "finished_at",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "timestamp",
+          "scale": 7,
+          "childType": "datetime",
+          "type": "string",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey",
+            "triggerUpdateColumns"
+          ],
+          "compositePartitionKey": false,
+          "triggerUpdateColumns": false,
+          "required": false,
+          "GUID": "0b2e4d0f-b243-4f9c-a9bc-75d6705cebce",
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "foreignCollection": "",
+          "foreignField": []
+        },
+        {
+          "name": "total_count",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "integer",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey",
+            "triggerUpdateColumns"
+          ],
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "triggerUpdateColumns": false,
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "required": false,
+          "GUID": "5c12c6a8-e6ee-4c61-87ec-2c9517df5f70",
+          "foreignCollection": "",
+          "foreignField": []
+        },
+        {
+          "name": "warmup_mode",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "childType": "boolean",
+          "type": "boolean",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey",
+            "triggerUpdateColumns"
+          ],
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "triggerUpdateColumns": false,
+          "error": {
+            "name": false,
+            "code": false
+          },
+          "required": false,
+          "GUID": "8f428b1e-d26c-431e-a1ac-7f0e6c3678db",
+          "foreignCollection": "",
+          "foreignField": []
+        },
+        {
+          "name": "hour_limit",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "integer",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey",
+            "triggerUpdateColumns"
+          ],
+          "compositePartitionKey": false,
+          "triggerUpdateColumns": false,
+          "required": false,
+          "GUID": "27a4703c-c7c1-4fcb-9739-c2be3ab1bd3b",
+          "foreignCollection": "",
+          "foreignField": [],
+          "error": {
+            "name": false,
+            "code": false
+          }
         }
       ],
       "definitions": {
@@ -448,8 +772,6 @@
           "required": true,
           "GUID": "a269f903-d13d-41c7-8615-0d9f4cec955f",
           "error": {},
-          "foreignCollection": "",
-          "foreignField": [],
           "childRelationships": [
             "99fb679c-3d53-4d61-b445-db91b9e78d81"
           ]
@@ -507,14 +829,14 @@
           "triggerUpdateColumns": false,
           "required": true,
           "GUID": "f6b00ccb-0af6-43a8-a731-b5de6fc245be",
-          "relationshipType": "Foreign Key",
+          "error": {},
           "foreignCollection": "f26d24d8-4990-479f-b432-0d758d2328b1",
+          "relationshipType": "Foreign Key",
           "foreignField": [
             "f26d24d8-4990-479f-b432-0d758d2328b1",
             "107c9f9f-f308-4065-a147-bba3571793b6"
           ],
-          "parentRelationship": "4006dbdc-3557-4f7e-b38f-55dfbd0d8fc9",
-          "error": {}
+          "parentRelationship": "628fa001-de0f-4e22-bc06-53b548d8dff8"
         },
         {
           "name": "message_type",
@@ -767,7 +1089,7 @@
             "281a2c32-4480-4b24-9466-4feee7a232e7",
             "c05dfac6-476e-4726-b53c-1852e54b9e24"
           ],
-          "parentRelationship": "eaabc148-0c67-494d-8f8e-265bfff7e5d4"
+          "parentRelationship": "d1126d74-0260-4f60-aea1-153bf8acae41"
         },
         {
           "name": "user_device_id",
@@ -1045,7 +1367,7 @@
             "c58b53a0-cd9f-4551-912f-c97d8b9eecf8",
             "5cc04e0d-b8d9-4803-989c-5a471338554d",
             "084f1909-2ff8-4981-a9a8-1356c4dec17a",
-            "eaabc148-0c67-494d-8f8e-265bfff7e5d4"
+            "d1126d74-0260-4f60-aea1-153bf8acae41"
           ],
           "error": {},
           "foreignCollection": "",
@@ -1294,482 +1616,6 @@
       "bucketId": "f3127c54-6891-44f5-9e7f-31814635dce6"
     },
     {
-      "GUID": "b15e131c-53bf-4141-8628-93790ff631d6",
-      "collectionName": "campaign_bulk",
-      "type": "object",
-      "properties": [
-        {
-          "name": "campaign_pk",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": true,
-          "exclusiveMinimum": false,
-          "exclusiveMaximum": false,
-          "mode": "serial",
-          "childType": "numeric",
-          "type": "numeric",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "triggerUpdateColumns": false,
-          "required": true,
-          "GUID": "843e8880-da68-435b-9ae9-005b309df3f3",
-          "relationshipType": "Foreign Key",
-          "foreignCollection": "f26d24d8-4990-479f-b432-0d758d2328b1",
-          "foreignField": [
-            "f26d24d8-4990-479f-b432-0d758d2328b1",
-            "107c9f9f-f308-4065-a147-bba3571793b6"
-          ],
-          "parentRelationship": "11532111-6673-4743-a175-810d8cf58b0b",
-          "error": {}
-        },
-        {
-          "name": "finished_at",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "unique": false,
-          "mode": "timestamp",
-          "scale": 7,
-          "childType": "datetime",
-          "type": "string",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "triggerUpdateColumns": false,
-          "required": false,
-          "GUID": "f0c882ab-bb77-449f-8aa9-b31a32e1aad8",
-          "error": {
-            "name": false,
-            "code": false
-          },
-          "foreignCollection": "",
-          "foreignField": []
-        },
-        {
-          "name": "total_count",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "unique": false,
-          "exclusiveMinimum": false,
-          "exclusiveMaximum": false,
-          "mode": "integer",
-          "childType": "numeric",
-          "type": "numeric",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "compositePrimaryKey": false,
-          "triggerUpdateColumns": false,
-          "error": {
-            "name": false,
-            "code": false
-          },
-          "required": false,
-          "GUID": "1161ed92-fdfa-456a-8826-fb26b2965eb9",
-          "foreignCollection": "",
-          "foreignField": []
-        },
-        {
-          "name": "warmup_mode",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "unique": false,
-          "childType": "boolean",
-          "type": "boolean",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "compositePrimaryKey": false,
-          "compositeUniqueKey": false,
-          "triggerUpdateColumns": false,
-          "error": {
-            "name": false,
-            "code": false
-          },
-          "required": false,
-          "GUID": "20865d07-bd9f-4e42-b5fe-0f9769a3d78b",
-          "foreignCollection": "",
-          "foreignField": []
-        },
-        {
-          "name": "hour_limit",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "unique": false,
-          "exclusiveMinimum": false,
-          "exclusiveMaximum": false,
-          "mode": "integer",
-          "childType": "numeric",
-          "type": "numeric",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "triggerUpdateColumns": false,
-          "required": false,
-          "GUID": "eb93d773-7587-4bc4-8567-15b4678ea708",
-          "foreignCollection": "",
-          "foreignField": [],
-          "error": {}
-        }
-      ],
-      "definitions": {
-        "type": "definitions",
-        "properties": [],
-        "GUID": "41de3227-118f-4434-a1a8-dedc80e14b28"
-      },
-      "isActivated": true,
-      "additionalProperties": false,
-      "memory_optimized": false,
-      "collectionUsers": [],
-      "ifNotExist": true,
-      "on_commit": "PRESERVE ROWS",
-      "table_tablespace_name": "pg_default",
-      "bucketId": "f3127c54-6891-44f5-9e7f-31814635dce6",
-      "hackoladeMeta": {}
-    },
-    {
-      "GUID": "3aa178f9-a703-4c2b-ab76-9e73994436d9",
-      "collectionName": "campaign_subject",
-      "type": "object",
-      "properties": [
-        {
-          "name": "campaign_pk",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "unique": false,
-          "exclusiveMinimum": false,
-          "exclusiveMaximum": false,
-          "mode": "serial",
-          "childType": "numeric",
-          "type": "numeric",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "triggerUpdateColumns": false,
-          "required": false,
-          "GUID": "8d9d6024-9499-4281-abd9-f45e3a4dea29",
-          "relationshipType": "Foreign Key",
-          "foreignCollection": "f26d24d8-4990-479f-b432-0d758d2328b1",
-          "foreignField": [
-            "f26d24d8-4990-479f-b432-0d758d2328b1",
-            "107c9f9f-f308-4065-a147-bba3571793b6"
-          ],
-          "parentRelationship": "c33dd03a-44bd-4207-ac7c-0d630c2e25cb",
-          "error": {}
-        },
-        {
-          "name": "subject_length",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "unique": false,
-          "exclusiveMinimum": false,
-          "exclusiveMaximum": false,
-          "mode": "smallint",
-          "childType": "numeric",
-          "type": "numeric",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "triggerUpdateColumns": false,
-          "required": false,
-          "GUID": "79b22ddc-47a4-42ec-9aab-7f121cabf778",
-          "error": {
-            "name": false,
-            "code": false
-          },
-          "foreignCollection": "",
-          "foreignField": []
-        },
-        {
-          "name": "subject_with_personalization",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "unique": false,
-          "childType": "boolean",
-          "type": "boolean",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "compositePrimaryKey": false,
-          "compositeUniqueKey": false,
-          "triggerUpdateColumns": false,
-          "error": {
-            "name": false,
-            "code": false
-          },
-          "required": false,
-          "GUID": "77188cd4-ae0f-47db-96e0-9f1f57dd60e1",
-          "foreignCollection": "",
-          "foreignField": []
-        },
-        {
-          "name": "subject_with_deadline",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "unique": false,
-          "childType": "boolean",
-          "type": "boolean",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "compositePrimaryKey": false,
-          "compositeUniqueKey": false,
-          "triggerUpdateColumns": false,
-          "error": {
-            "name": false,
-            "code": false
-          },
-          "required": false,
-          "GUID": "50704aea-9467-47e2-a6d3-ab0d3be24754",
-          "foreignCollection": "",
-          "foreignField": []
-        },
-        {
-          "name": "subject_with_emoji",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "unique": false,
-          "childType": "boolean",
-          "type": "boolean",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "compositePrimaryKey": false,
-          "compositeUniqueKey": false,
-          "triggerUpdateColumns": false,
-          "error": {
-            "name": false,
-            "code": false
-          },
-          "required": false,
-          "GUID": "06495cb7-a3bb-4083-b3e1-aab43a633a13",
-          "foreignCollection": "",
-          "foreignField": []
-        },
-        {
-          "name": "subject_with_bonuses",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "unique": false,
-          "childType": "boolean",
-          "type": "boolean",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "compositePrimaryKey": false,
-          "compositeUniqueKey": false,
-          "triggerUpdateColumns": false,
-          "error": {
-            "name": false,
-            "code": false
-          },
-          "required": false,
-          "GUID": "e3d23d6a-166b-4aab-a7fc-154faba4c22a",
-          "foreignCollection": "",
-          "foreignField": []
-        },
-        {
-          "name": "subject_with_discount",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "unique": false,
-          "childType": "boolean",
-          "type": "boolean",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "compositePrimaryKey": false,
-          "compositeUniqueKey": false,
-          "triggerUpdateColumns": false,
-          "error": {
-            "name": false,
-            "code": false
-          },
-          "required": false,
-          "GUID": "1e1c581c-96da-4a74-8e91-0fcc1bd83df6",
-          "foreignCollection": "",
-          "foreignField": []
-        },
-        {
-          "name": "subject_with_saleout",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "unique": false,
-          "childType": "boolean",
-          "type": "boolean",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "compositePrimaryKey": false,
-          "compositeUniqueKey": false,
-          "triggerUpdateColumns": false,
-          "error": {
-            "name": false,
-            "code": false
-          },
-          "required": false,
-          "GUID": "b88e68c6-3df4-4f89-a11f-c4be0a3af38e",
-          "foreignCollection": "",
-          "foreignField": []
-        }
-      ],
-      "definitions": {
-        "type": "definitions",
-        "properties": [],
-        "GUID": "49402867-5f2f-4fbe-a810-ab8b2aeba693"
-      },
-      "isActivated": true,
-      "additionalProperties": false,
-      "memory_optimized": false,
-      "collectionUsers": [],
-      "ifNotExist": true,
-      "on_commit": "PRESERVE ROWS",
-      "table_tablespace_name": "pg_default",
-      "bucketId": "f3127c54-6891-44f5-9e7f-31814635dce6"
-    },
-    {
-      "GUID": "cb7b8c31-f6e3-4ee2-922b-281f8a400bca",
-      "collectionName": "campaign_trigger",
-      "type": "object",
-      "properties": [
-        {
-          "name": "campaign_pk",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": true,
-          "exclusiveMinimum": false,
-          "exclusiveMaximum": false,
-          "mode": "serial",
-          "childType": "numeric",
-          "type": "numeric",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "triggerUpdateColumns": false,
-          "required": false,
-          "GUID": "f16c603f-7480-4cfa-a64b-b1b8a1f51952",
-          "relationshipType": "Foreign Key",
-          "foreignCollection": "f26d24d8-4990-479f-b432-0d758d2328b1",
-          "foreignField": [
-            "f26d24d8-4990-479f-b432-0d758d2328b1",
-            "107c9f9f-f308-4065-a147-bba3571793b6"
-          ],
-          "parentRelationship": "ed80d4dc-e94a-4b0a-8808-a0bccf3b0d75",
-          "error": {}
-        },
-        {
-          "name": "position",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "unique": false,
-          "exclusiveMinimum": false,
-          "exclusiveMaximum": false,
-          "mode": "smallint",
-          "childType": "numeric",
-          "type": "numeric",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "triggerUpdateColumns": false,
-          "required": true,
-          "GUID": "cae0b572-98d1-4c71-9563-e4e5745a7997",
-          "default": 1,
-          "error": {
-            "name": false,
-            "code": false
-          },
-          "foreignCollection": "",
-          "foreignField": []
-        }
-      ],
-      "definitions": {
-        "type": "definitions",
-        "properties": [],
-        "GUID": "77e82409-d6f1-4ebf-ade0-bf02ca44b84d"
-      },
-      "isActivated": true,
-      "additionalProperties": false,
-      "memory_optimized": false,
-      "collectionUsers": [],
-      "ifNotExist": true,
-      "on_commit": "PRESERVE ROWS",
-      "table_tablespace_name": "pg_default",
-      "bucketId": "f3127c54-6891-44f5-9e7f-31814635dce6"
-    },
-    {
       "GUID": "ecdea443-99fa-4965-8ec6-8b6f300009b9",
       "collectionName": "message_behavior",
       "type": "object",
@@ -1855,9 +1701,9 @@
           "isActivated": true,
           "primaryKey": false,
           "unique": false,
-          "mode": "varchar",
-          "required": false,
-          "childType": "char",
+          "mode": "timestamp",
+          "scale": 7,
+          "childType": "datetime",
           "type": "string",
           "compositeKey": [
             "compositePartitionKey",
@@ -1868,6 +1714,7 @@
           "compositePartitionKey": false,
           "compositePrimaryKey": false,
           "triggerUpdateColumns": false,
+          "required": false,
           "GUID": "57c4663a-64c7-41b2-b8b0-bbca54492208",
           "error": {}
         }
@@ -1901,9 +1748,6 @@
         "281a2c32-4480-4b24-9466-4feee7a232e7",
         "fb7e8757-a100-4c2d-aa2a-6c4572d1ca55",
         "a7655bad-c51e-4087-84f9-7585d50205ff",
-        "b15e131c-53bf-4141-8628-93790ff631d6",
-        "3aa178f9-a703-4c2b-ab76-9e73994436d9",
-        "cb7b8c31-f6e3-4ee2-922b-281f8a400bca",
         "ecdea443-99fa-4965-8ec6-8b6f300009b9"
       ],
       "backgroundColor": {
@@ -2411,15 +2255,15 @@
         "dataType": "",
         "shape": [
           {
-            "x": 3043.2,
-            "y": 1666.6
+            "x": 3070.2,
+            "y": 1668.2666666666667
           },
           {
-            "x": 3101.7,
-            "y": 1666.6
+            "x": 3115.2,
+            "y": 1668.2666666666667
           },
           {
-            "x": 3101.7,
+            "x": 3115.2,
             "y": 1630.1
           },
           {
@@ -2463,12 +2307,12 @@
         "dataType": "",
         "shape": [
           {
-            "x": 3140.2,
-            "y": 1484.1
+            "x": 3140.1999999999994,
+            "y": 1481.9915755152506
           },
           {
             "x": 3074.2,
-            "y": 1484.1
+            "y": 1481.9915755152506
           },
           {
             "x": 3074.2,
@@ -2520,218 +2364,21 @@
           },
           {
             "x": 3278.7,
-            "y": 1536.6
+            "y": 1565.0457877576252
+          },
+          {
+            "x": 3278.6999999999994,
+            "y": 1565.0457877576252
+          },
+          {
+            "x": 3278.6999999999994,
+            "y": 1534.4915755152506
           }
         ],
         "sides": [
           "top",
           "bottom"
         ]
-      }
-    },
-    {
-      "name": "fk_campaigns_compaign_pk_to_messages_campaign_id",
-      "relationshipType": "Foreign Key",
-      "parentField": [
-        [
-          "f26d24d8-4990-479f-b432-0d758d2328b1",
-          "107c9f9f-f308-4065-a147-bba3571793b6"
-        ]
-      ],
-      "parentCardinality": "1",
-      "childField": [
-        [
-          "c6ac5d29-fc79-4968-82cb-b52cc76abd0e",
-          "f6b00ccb-0af6-43a8-a731-b5de6fc245be"
-        ]
-      ],
-      "isActivated": true,
-      "childCardinality": "0..n",
-      "parentCollection": "f26d24d8-4990-479f-b432-0d758d2328b1",
-      "childCollection": "c6ac5d29-fc79-4968-82cb-b52cc76abd0e",
-      "GUID": "4006dbdc-3557-4f7e-b38f-55dfbd0d8fc9",
-      "hackoladeStyles": {
-        "GUID": "d60e6676-cfde-4b86-9430-c695b6a4ae15",
-        "autoPositioning": true,
-        "type": "Orthogonal",
-        "thickness": 2,
-        "color": "#79c4ff",
-        "dataType": "",
-        "shape": [
-          {
-            "x": 2768.2,
-            "y": 1714.1
-          },
-          {
-            "x": 2723.7,
-            "y": 1714.1
-          },
-          {
-            "x": 2723.7,
-            "y": 1677.6
-          },
-          {
-            "x": 2679.2,
-            "y": 1677.6
-          }
-        ],
-        "sides": [
-          "left",
-          "right"
-        ]
-      }
-    },
-    {
-      "name": "fk_campaigns_compaign_pk_to_compaign_email_compaign_pk",
-      "relationshipType": "Foreign Key",
-      "parentField": [
-        [
-          "f26d24d8-4990-479f-b432-0d758d2328b1",
-          "107c9f9f-f308-4065-a147-bba3571793b6"
-        ]
-      ],
-      "parentCardinality": "1",
-      "childField": [
-        [
-          "b15e131c-53bf-4141-8628-93790ff631d6",
-          "843e8880-da68-435b-9ae9-005b309df3f3"
-        ]
-      ],
-      "isActivated": true,
-      "childCardinality": "1",
-      "parentCollection": "f26d24d8-4990-479f-b432-0d758d2328b1",
-      "childCollection": "b15e131c-53bf-4141-8628-93790ff631d6",
-      "GUID": "11532111-6673-4743-a175-810d8cf58b0b",
-      "hackoladeStyles": {
-        "GUID": "5eba7b4e-afb2-44c4-bb8d-44834eef5e6f",
-        "autoPositioning": true,
-        "type": "Orthogonal",
-        "thickness": 2,
-        "color": "#79c4ff",
-        "dataType": "",
-        "shape": [
-          {
-            "x": 2301,
-            "y": 1677.5
-          },
-          {
-            "x": 2335.1,
-            "y": 1677.5
-          },
-          {
-            "x": 2335.1,
-            "y": 1677.6
-          },
-          {
-            "x": 2369.2,
-            "y": 1677.6
-          }
-        ],
-        "sides": [
-          "right",
-          "left"
-        ]
-      },
-      "customProperties": {
-        "relationshipOnDelete": "CASCADE"
-      }
-    },
-    {
-      "name": "fk_campaigns_compaign_pk_to_compaign_subject_compaign_pk",
-      "relationshipType": "Foreign Key",
-      "parentField": [
-        [
-          "f26d24d8-4990-479f-b432-0d758d2328b1",
-          "107c9f9f-f308-4065-a147-bba3571793b6"
-        ]
-      ],
-      "parentCardinality": "1",
-      "childField": [
-        [
-          "3aa178f9-a703-4c2b-ab76-9e73994436d9",
-          "8d9d6024-9499-4281-abd9-f45e3a4dea29"
-        ]
-      ],
-      "isActivated": true,
-      "childCardinality": "1",
-      "parentCollection": "f26d24d8-4990-479f-b432-0d758d2328b1",
-      "childCollection": "3aa178f9-a703-4c2b-ab76-9e73994436d9",
-      "GUID": "c33dd03a-44bd-4207-ac7c-0d630c2e25cb",
-      "hackoladeStyles": {
-        "GUID": "c83769a3-ed0d-42fb-b3d7-8e9f8a9c3129",
-        "autoPositioning": false,
-        "type": "Orthogonal",
-        "thickness": 2,
-        "color": "#79c4ff",
-        "dataType": "",
-        "shape": [
-          {
-            "x": 2320,
-            "y": 1844.14255212383
-          },
-          {
-            "x": 2525.1694764550707,
-            "y": 1844.14255212383
-          },
-          {
-            "x": 2525.1694764550707,
-            "y": 1772.6
-          }
-        ],
-        "sides": [
-          "right",
-          "bottom"
-        ]
-      },
-      "customProperties": {
-        "relationshipOnDelete": "CASCADE"
-      }
-    },
-    {
-      "name": "fk_campaigns_campaign_pk_to_campaign_trigger_campaign_pk",
-      "relationshipType": "Foreign Key",
-      "parentField": [
-        [
-          "f26d24d8-4990-479f-b432-0d758d2328b1",
-          "107c9f9f-f308-4065-a147-bba3571793b6"
-        ]
-      ],
-      "parentCardinality": "1",
-      "childField": [
-        [
-          "cb7b8c31-f6e3-4ee2-922b-281f8a400bca",
-          "f16c603f-7480-4cfa-a64b-b1b8a1f51952"
-        ]
-      ],
-      "isActivated": true,
-      "childCardinality": "1",
-      "parentCollection": "f26d24d8-4990-479f-b432-0d758d2328b1",
-      "childCollection": "cb7b8c31-f6e3-4ee2-922b-281f8a400bca",
-      "GUID": "ed80d4dc-e94a-4b0a-8808-a0bccf3b0d75",
-      "hackoladeStyles": {
-        "GUID": "d7bb364c-bb1a-49b4-a65f-a8aaafff1600",
-        "autoPositioning": false,
-        "type": "Orthogonal",
-        "thickness": 2,
-        "color": "#79c4ff",
-        "dataType": "",
-        "shape": [
-          {
-            "x": 2591.005714285714,
-            "y": 1891
-          },
-          {
-            "x": 2591.005714285714,
-            "y": 1772.6
-          }
-        ],
-        "sides": [
-          "top",
-          "bottom"
-        ]
-      },
-      "customProperties": {
-        "relationshipOnDelete": "CASCADE"
       }
     },
     {
@@ -2764,20 +2411,20 @@
         "dataType": "",
         "shape": [
           {
-            "x": 3145,
-            "y": 1739
+            "x": 3122.8615429101296,
+            "y": 1749.5421224237466
           },
           {
-            "x": 3094.1,
-            "y": 1739
+            "x": 3096.5307714550645,
+            "y": 1749.5421224237466
           },
           {
-            "x": 3094.1,
-            "y": 1761.6
+            "x": 3096.5307714550645,
+            "y": 1764.9333333333332
           },
           {
-            "x": 3043.2,
-            "y": 1761.6
+            "x": 3070.2,
+            "y": 1764.9333333333332
           }
         ],
         "sides": [
@@ -2806,9 +2453,9 @@
       "childCardinality": "0..n",
       "parentCollection": "281a2c32-4480-4b24-9466-4feee7a232e7",
       "childCollection": "c6ac5d29-fc79-4968-82cb-b52cc76abd0e",
-      "GUID": "eaabc148-0c67-494d-8f8e-265bfff7e5d4",
+      "GUID": "d1126d74-0260-4f60-aea1-153bf8acae41",
       "hackoladeStyles": {
-        "GUID": "2a481487-568d-4a5a-918f-e7a138263599",
+        "GUID": "1e478db2-1807-4edc-8062-7394b8048587",
         "autoPositioning": false,
         "type": "Orthogonal",
         "thickness": 2,
@@ -2817,24 +2464,76 @@
         "shape": [
           {
             "x": 2768.2,
-            "y": 1677.2622528442212
+            "y": 1590.8168489694986
           },
           {
-            "x": 2752.145787757626,
-            "y": 1677.2622528442212
+            "x": 2753.2,
+            "y": 1590.8168489694986
           },
           {
-            "y": 1415.1904816982587,
-            "x": 2752.145787757626
+            "x": 2753.2,
+            "y": 1410.4915755152506
           },
           {
             "x": 2808.2,
-            "y": 1415.1904816982587
+            "y": 1410.4915755152506
           }
         ],
         "sides": [
           "left",
           "left"
+        ]
+      }
+    },
+    {
+      "name": "fk_campaigns_campaign_pk_to_messages_campaign_id",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "f26d24d8-4990-479f-b432-0d758d2328b1",
+          "107c9f9f-f308-4065-a147-bba3571793b6"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "c6ac5d29-fc79-4968-82cb-b52cc76abd0e",
+          "f6b00ccb-0af6-43a8-a731-b5de6fc245be"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "parentCollection": "f26d24d8-4990-479f-b432-0d758d2328b1",
+      "childCollection": "c6ac5d29-fc79-4968-82cb-b52cc76abd0e",
+      "GUID": "628fa001-de0f-4e22-bc06-53b548d8dff8",
+      "hackoladeStyles": {
+        "GUID": "fb706f72-e193-4799-850f-0e345ed48af6",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 2768.2,
+            "y": 1716.6
+          },
+          {
+            "x": 2731.139934789762,
+            "y": 1716.6
+          },
+          {
+            "x": 2731.139934789762,
+            "y": 1776.557877576253
+          },
+          {
+            "x": 2694.079869579524,
+            "y": 1776.557877576253
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
         ]
       }
     }
@@ -2901,28 +2600,6 @@
     "084f1909-2ff8-4981-a9a8-1356c4dec17a": "fk_user_user_id_to_client_first_purchase_date_user_id",
     "af785522-6874-4a5f-ab59-539746c6411d": "fk_client_first_purchase_date_client_id_to_client_client_id",
     "107c9f9f-f308-4065-a147-bba3571793b6": "campaign_pk",
-    "4006dbdc-3557-4f7e-b38f-55dfbd0d8fc9": "fk_campaigns_compaign_pk_to_messages_campaign_id",
-    "b15e131c-53bf-4141-8628-93790ff631d6": "campaign_bulk",
-    "843e8880-da68-435b-9ae9-005b309df3f3": "campaign_pk",
-    "11532111-6673-4743-a175-810d8cf58b0b": "fk_campaigns_compaign_pk_to_compaign_email_compaign_pk",
-    "f0c882ab-bb77-449f-8aa9-b31a32e1aad8": "finished_at",
-    "1161ed92-fdfa-456a-8826-fb26b2965eb9": "total_count",
-    "20865d07-bd9f-4e42-b5fe-0f9769a3d78b": "warmup_mode",
-    "eb93d773-7587-4bc4-8567-15b4678ea708": "hour_limit",
-    "3aa178f9-a703-4c2b-ab76-9e73994436d9": "campaign_subject",
-    "8d9d6024-9499-4281-abd9-f45e3a4dea29": "campaign_pk",
-    "c33dd03a-44bd-4207-ac7c-0d630c2e25cb": "fk_campaigns_compaign_pk_to_compaign_subject_compaign_pk",
-    "79b22ddc-47a4-42ec-9aab-7f121cabf778": "subject_length",
-    "77188cd4-ae0f-47db-96e0-9f1f57dd60e1": "subject_with_personalization",
-    "50704aea-9467-47e2-a6d3-ab0d3be24754": "subject_with_deadline",
-    "06495cb7-a3bb-4083-b3e1-aab43a633a13": "subject_with_emoji",
-    "e3d23d6a-166b-4aab-a7fc-154faba4c22a": "subject_with_bonuses",
-    "1e1c581c-96da-4a74-8e91-0fcc1bd83df6": "subject_with_discount",
-    "b88e68c6-3df4-4f89-a11f-c4be0a3af38e": "subject_with_saleout",
-    "cb7b8c31-f6e3-4ee2-922b-281f8a400bca": "campaign_trigger",
-    "f16c603f-7480-4cfa-a64b-b1b8a1f51952": "campaign_pk",
-    "cae0b572-98d1-4c71-9563-e4e5745a7997": "position",
-    "ed80d4dc-e94a-4b0a-8808-a0bccf3b0d75": "fk_campaigns_campaign_pk_to_campaign_trigger_campaign_pk",
     "ecdea443-99fa-4965-8ec6-8b6f300009b9": "message_behavior",
     "3f8fdee4-45d6-4bc4-9552-65d769dd0a25": "id",
     "55ebb6b9-0d14-4a95-8ac4-8340e9ca28de": "type",
@@ -2934,7 +2611,20 @@
     "e855e0ed-84f8-4f21-aa43-a9634c58d4ab": "updated_at",
     "b29f4228-9b92-460b-a7c5-db2ba69aed4f": "user_id",
     "f4c16902-26cf-4d74-bec1-a5bea4c1058f": "user_device_id",
-    "eaabc148-0c67-494d-8f8e-265bfff7e5d4": "fk_user_user_id_to_messages_user_id"
+    "b2d450b8-6c43-4c25-a3df-7aca2ffc80df": "subject_length",
+    "e291dc7e-62f3-4106-b79c-4bc01fd080e0": "subject_with_personalization",
+    "2f814a9a-64d8-41b2-9150-e5d24e75b1d1": "subject_with_deadline",
+    "ff22222a-675d-4d9a-b30e-faf5d93e7eb3": "subject_with_emoji",
+    "a0ced3ef-197a-4838-9137-305cb91fdbe8": "subject_with_bonuses",
+    "66c50c0f-883c-41ec-9029-d598efa811cc": "subject_with_discount",
+    "44c0b28d-5528-49bb-a4fd-730f4c9bfbb5": "subject_with_saleout",
+    "5d672507-2e56-4d33-9aed-4894bad0aa32": "position",
+    "0b2e4d0f-b243-4f9c-a9bc-75d6705cebce": "finished_at",
+    "5c12c6a8-e6ee-4c61-87ec-2c9517df5f70": "total_count",
+    "8f428b1e-d26c-431e-a1ac-7f0e6c3678db": "warmup_mode",
+    "27a4703c-c7c1-4fcb-9739-c2be3ab1bd3b": "hour_limit",
+    "d1126d74-0260-4f60-aea1-153bf8acae41": "fk_user_user_id_to_messages_user_id",
+    "628fa001-de0f-4e22-bc06-53b548d8dff8": "fk_campaigns_campaign_pk_to_messages_campaign_id"
   },
   "definitions": {
     "type": "definitions",
@@ -2961,7 +2651,7 @@
   "creationTS": "2025-02-28T13:38:32.275Z",
   "GUID": "6b0d81c1-eee1-4a95-8fd6-be5af8c1cbda",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-03-03T12:37:57.748Z",
+  "lastModifTS": "2025-03-01T19:25:45.881Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -2987,24 +2677,24 @@
           },
           {
             "GUID": "f26d24d8-4990-479f-b432-0d758d2328b1",
-            "x": 2369.2,
-            "y": 1582.6,
-            "width": 310,
-            "height": 190,
+            "x": 2289.079869579524,
+            "y": 1572.057877576253,
+            "width": 405,
+            "height": 409,
             "color": {}
           },
           {
             "GUID": "c6ac5d29-fc79-4968-82cb-b52cc76abd0e",
             "x": 2768.2,
             "y": 1571.6,
-            "width": 275,
-            "height": 285,
+            "width": 302,
+            "height": 290,
             "color": {}
           },
           {
             "GUID": "bf2aae05-8be6-4553-83be-15178500675f",
-            "x": 3140.2,
-            "y": 1431.6,
+            "x": 3140.1999999999994,
+            "y": 1429.4915755152506,
             "width": 277,
             "height": 105,
             "color": {}
@@ -3042,33 +2732,9 @@
             "color": {}
           },
           {
-            "GUID": "b15e131c-53bf-4141-8628-93790ff631d6",
-            "x": 2029,
-            "y": 1616,
-            "width": 272,
-            "height": 123,
-            "color": {}
-          },
-          {
-            "GUID": "3aa178f9-a703-4c2b-ab76-9e73994436d9",
-            "x": 2008,
-            "y": 1765,
-            "width": 312,
-            "height": 176,
-            "color": {}
-          },
-          {
-            "GUID": "cb7b8c31-f6e3-4ee2-922b-281f8a400bca",
-            "x": 2414,
-            "y": 1891,
-            "width": 245,
-            "height": 69,
-            "color": {}
-          },
-          {
             "GUID": "ecdea443-99fa-4965-8ec6-8b6f300009b9",
-            "x": 3145,
-            "y": 1684,
+            "x": 3122.8615429101296,
+            "y": 1694.5421224237466,
             "width": 275,
             "height": 110,
             "color": {}
@@ -3082,7 +2748,7 @@
         },
         "buckets": [
           {
-            "x": 1968,
+            "x": 1990.1999999999998,
             "y": 1334.6,
             "GUID": "f3127c54-6891-44f5-9e7f-31814635dce6"
           }
@@ -3117,7 +2783,9 @@
             "GUID": "f26d24d8-4990-479f-b432-0d758d2328b1"
           },
           {
-            "GUID": "c6ac5d29-fc79-4968-82cb-b52cc76abd0e"
+            "GUID": "c6ac5d29-fc79-4968-82cb-b52cc76abd0e",
+            "autoWidth": false,
+            "autoHeight": false
           },
           {
             "GUID": "bf2aae05-8be6-4553-83be-15178500675f"
@@ -3137,11 +2805,6 @@
           },
           {
             "GUID": "a7655bad-c51e-4087-84f9-7585d50205ff"
-          },
-          {
-            "autoWidth": false,
-            "autoHeight": false,
-            "GUID": "3aa178f9-a703-4c2b-ab76-9e73994436d9"
           },
           {
             "autoWidth": false,
