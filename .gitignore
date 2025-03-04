@@ -124,3 +124,4 @@ dmypy.json
 .pyre/
 
 *.csv
+cleaned_datasets/mongo/ver1/
