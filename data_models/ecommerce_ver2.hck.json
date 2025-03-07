@@ -509,81 +509,6 @@
       ]
     },
     {
-      "GUID": "bf2aae05-8be6-4553-83be-15178500675f",
-      "collectionName": "client_first_purchase_date",
-      "type": "object",
-      "properties": [
-        {
-          "name": "client_id",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": true,
-          "exclusiveMinimum": false,
-          "exclusiveMaximum": false,
-          "mode": "bigserial",
-          "childType": "numeric",
-          "type": "numeric",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "triggerUpdateColumns": false,
-          "required": false,
-          "GUID": "0cb26c1a-e47a-47c8-b828-ba35f5468bdc",
-          "error": {},
-          "relationshipType": "Foreign Key",
-          "foreignCollection": "a7655bad-c51e-4087-84f9-7585d50205ff",
-          "foreignField": [
-            "a7655bad-c51e-4087-84f9-7585d50205ff",
-            "800d1171-8776-43a4-8cac-98e336bd7bb8"
-          ],
-          "parentRelationship": "59c338d6-67e5-4fea-a7b9-cede0f0b3aa5"
-        },
-        {
-          "name": "first_purchase_date",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "unique": false,
-          "mode": "date",
-          "scale": 7,
-          "childType": "datetime",
-          "type": "string",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "compositePrimaryKey": false,
-          "compositeUniqueKey": false,
-          "triggerUpdateColumns": false,
-          "error": {},
-          "required": false,
-          "GUID": "a670e186-6391-4bbc-987a-737ac3c7fbe1",
-          "foreignCollection": "",
-          "foreignField": []
-        }
-      ],
-      "definitions": {
-        "type": "definitions",
-        "properties": [],
-        "GUID": "a9c97a18-6217-4976-af25-69d5b6411df6"
-      },
-      "isActivated": true,
-      "additionalProperties": false,
-      "memory_optimized": false,
-      "collectionUsers": [],
-      "ifNotExist": true,
-      "on_commit": "PRESERVE ROWS",
-      "table_tablespace_name": "pg_default",
-      "bucketId": "f3127c54-6891-44f5-9e7f-31814635dce6"
-    },
-    {
       "GUID": "db1bddd0-3084-4005-a5ef-ed9d9d753b1d",
       "collectionName": "friends",
       "type": "object",
@@ -692,8 +617,7 @@
           "childRelationships": [
             "b16e64ec-3021-4d27-802b-cf3883200149",
             "c58b53a0-cd9f-4551-912f-c97d8b9eecf8",
-            "5cc04e0d-b8d9-4803-989c-5a471338554d",
-            "be21643b-4994-4eb1-9499-9048cd66921a"
+            "5cc04e0d-b8d9-4803-989c-5a471338554d"
           ],
           "error": {},
           "foreignCollection": "",
@@ -853,53 +777,19 @@
           "GUID": "800d1171-8776-43a4-8cac-98e336bd7bb8",
           "error": {},
           "childRelationships": [
-            "efedb60a-4116-4956-bcd4-9721dfbe0e02",
-            "59c338d6-67e5-4fea-a7b9-cede0f0b3aa5"
+            "efedb60a-4116-4956-bcd4-9721dfbe0e02"
           ]
         },
         {
-          "name": "user_id",
+          "name": "first_purchase_date",
           "hackoladeMeta": {},
           "isActivated": true,
           "primaryKey": false,
           "unique": false,
-          "exclusiveMinimum": false,
-          "exclusiveMaximum": false,
-          "mode": "integer",
-          "childType": "numeric",
-          "type": "numeric",
-          "compositeKey": [
-            "compositePartitionKey",
-            "compositePrimaryKey",
-            "compositeUniqueKey",
-            "triggerUpdateColumns"
-          ],
-          "compositePartitionKey": false,
-          "compositePrimaryKey": false,
-          "compositeUniqueKey": false,
-          "triggerUpdateColumns": false,
-          "error": {},
-          "required": false,
-          "GUID": "6268a443-6d22-41c1-aedc-53fa4fd3f4da",
-          "relationshipType": "Foreign Key",
-          "foreignCollection": "281a2c32-4480-4b24-9466-4feee7a232e7",
-          "foreignField": [
-            "281a2c32-4480-4b24-9466-4feee7a232e7",
-            "c05dfac6-476e-4726-b53c-1852e54b9e24"
-          ],
-          "parentRelationship": "be21643b-4994-4eb1-9499-9048cd66921a"
-        },
-        {
-          "name": "user_device_id",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "primaryKey": false,
-          "unique": false,
-          "exclusiveMinimum": false,
-          "exclusiveMaximum": false,
-          "mode": "smallint",
-          "childType": "numeric",
-          "type": "numeric",
+          "mode": "date",
+          "scale": 7,
+          "childType": "datetime",
+          "type": "string",
           "compositeKey": [
             "compositePartitionKey",
             "compositePrimaryKey",
@@ -910,13 +800,10 @@
           "compositePrimaryKey": false,
           "triggerUpdateColumns": false,
           "required": false,
-          "GUID": "cbd757de-b04c-48f3-82d8-f4e5c0d1f7f5",
-          "error": {
-            "name": false,
-            "code": false
-          },
+          "GUID": "7d4ac3be-3d4e-418c-b1d0-59582d79a862",
           "foreignCollection": "",
-          "foreignField": []
+          "foreignField": [],
+          "error": {}
         }
       ],
       "definitions": {
@@ -1957,7 +1844,6 @@
         "c068ecb4-3db4-4742-a187-137cc4658638",
         "f26d24d8-4990-479f-b432-0d758d2328b1",
         "c6ac5d29-fc79-4968-82cb-b52cc76abd0e",
-        "bf2aae05-8be6-4553-83be-15178500675f",
         "db1bddd0-3084-4005-a5ef-ed9d9d753b1d",
         "281a2c32-4480-4b24-9466-4feee7a232e7",
         "fb7e8757-a100-4c2d-aa2a-6c4572d1ca55",
@@ -2141,110 +2027,6 @@
       }
     },
     {
-      "name": "fk_client_client_id_to_client_first_purchase_date_client_id",
-      "relationshipType": "Foreign Key",
-      "parentField": [
-        [
-          "15084f1e-daed-497b-bd46-2ab12ea802b0",
-          "13d271af-b225-408b-886e-edb4a896cead"
-        ]
-      ],
-      "parentCardinality": "1",
-      "childField": [
-        [
-          "bf2aae05-8be6-4553-83be-15178500675f",
-          "0cb26c1a-e47a-47c8-b828-ba35f5468bdc"
-        ]
-      ],
-      "isActivated": true,
-      "childCardinality": "0..n",
-      "GUID": "0a48f645-307a-4e9f-8347-4aef251ac2a7",
-      "parentCollection": "15084f1e-daed-497b-bd46-2ab12ea802b0",
-      "childCollection": "bf2aae05-8be6-4553-83be-15178500675f",
-      "hackoladeStyles": {
-        "GUID": "89232412-d3f3-4215-866c-393d1d71f533",
-        "autoPositioning": true,
-        "type": "Orthogonal",
-        "thickness": 2,
-        "color": "#79c4ff",
-        "dataType": "",
-        "shape": [
-          {
-            "x": 3860.699999999999,
-            "y": 1012.0857142857145
-          },
-          {
-            "x": 3860.699999999999,
-            "y": 1045.6428571428576
-          },
-          {
-            "x": 3860.8999999999987,
-            "y": 1045.6428571428576
-          },
-          {
-            "x": 3860.8999999999987,
-            "y": 1079.2000000000007
-          }
-        ],
-        "sides": [
-          "bottom",
-          "top"
-        ]
-      }
-    },
-    {
-      "name": "fk_user_user_id_to_client_first_purchase_date_user_id",
-      "relationshipType": "Foreign Key",
-      "parentField": [
-        [
-          "d760e22e-46c8-4865-8291-19d2a64a2051",
-          "f7a39ba4-1ee7-4b49-bf50-13cfcb6951ad"
-        ]
-      ],
-      "parentCardinality": "1",
-      "childField": [
-        [
-          "bf2aae05-8be6-4553-83be-15178500675f",
-          "3aa2c14a-f093-4d11-969a-87dddfb14484"
-        ]
-      ],
-      "isActivated": true,
-      "childCardinality": "0..n",
-      "GUID": "18c6dbd2-b194-4a41-b261-207de2ff271d",
-      "parentCollection": "d760e22e-46c8-4865-8291-19d2a64a2051",
-      "childCollection": "bf2aae05-8be6-4553-83be-15178500675f",
-      "hackoladeStyles": {
-        "GUID": "9bda97f5-fcf9-498c-9f3c-918d111c8e44",
-        "autoPositioning": true,
-        "type": "Orthogonal",
-        "thickness": 2,
-        "color": "#79c4ff",
-        "dataType": "",
-        "shape": [
-          {
-            "x": 3727.199999999999,
-            "y": 959.5857142857145
-          },
-          {
-            "x": 3576.7999999999993,
-            "y": 959.5857142857145
-          },
-          {
-            "x": 3576.7999999999993,
-            "y": 881.2499999999997
-          },
-          {
-            "x": 3426.4,
-            "y": 881.2499999999997
-          }
-        ],
-        "sides": [
-          "left",
-          "right"
-        ]
-      }
-    },
-    {
       "name": "fk_user_user_id_to_friends_friend1",
       "relationshipType": "Foreign Key",
       "parentField": [
@@ -2274,17 +2056,25 @@
         "dataType": "",
         "shape": [
           {
-            "x": 2827.2666666666646,
-            "y": 1456.9999999999989
+            "x": 2599.199999999999,
+            "y": 1593.5586003430924
           },
           {
-            "x": 2827.2666666666646,
-            "y": 1405.199999999999
+            "x": 2626.3999999999996,
+            "y": 1593.5586003430924
+          },
+          {
+            "x": 2626.3999999999996,
+            "y": 1529.2079365079358
+          },
+          {
+            "x": 2600.3999999999996,
+            "y": 1529.2079365079358
           }
         ],
         "sides": [
-          "top",
-          "bottom"
+          "right",
+          "right"
         ]
       },
       "customProperties": {
@@ -2321,17 +2111,25 @@
         "dataType": "",
         "shape": [
           {
-            "x": 2932.333333333334,
-            "y": 1456.9999999999989
+            "x": 2599.199999999999,
+            "y": 1593.5586003430924
           },
           {
-            "x": 2932.333333333334,
-            "y": 1405.199999999999
+            "x": 2625.3999999999996,
+            "y": 1593.5586003430924
+          },
+          {
+            "x": 2625.3999999999996,
+            "y": 1529.2079365079358
+          },
+          {
+            "x": 2600.3999999999996,
+            "y": 1529.2079365079358
           }
         ],
         "sides": [
-          "top",
-          "bottom"
+          "right",
+          "right"
         ]
       },
       "customProperties": {
@@ -2361,31 +2159,31 @@
       "GUID": "d2c1d4d7-582b-4000-89ee-cfd6cb61812d",
       "hackoladeStyles": {
         "GUID": "62b264e2-7502-46b5-a529-2d6bad3ed7cb",
-        "autoPositioning": true,
+        "autoPositioning": false,
         "type": "Orthogonal",
         "thickness": 2,
         "color": "#79c4ff",
         "dataType": "",
         "shape": [
           {
-            "x": 2349,
-            "y": 1425.3
+            "x": 2600,
+            "y": 1438.2898379702485
           },
           {
-            "x": 2315.2,
-            "y": 1425.3
+            "x": 2628,
+            "y": 1438.2898379702485
           },
           {
-            "x": 2315.2,
-            "y": 1383.7
+            "x": 2628,
+            "y": 1297.127154479643
           },
           {
-            "x": 2281.3999999999996,
-            "y": 1383.7
+            "x": 2594.3999999999996,
+            "y": 1297.127154479643
           }
         ],
         "sides": [
-          "left",
+          "right",
           "right"
         ]
       },
@@ -2423,25 +2221,25 @@
         "dataType": "",
         "shape": [
           {
-            "x": 2641,
-            "y": 1425.1955883078297
+            "x": 2600,
+            "y": 1482.8
           },
           {
-            "x": 2712.3999999999996,
-            "y": 1425.1955883078297
+            "x": 2626,
+            "y": 1482.8
           },
           {
-            "x": 2712.3999999999996,
-            "y": 1378.699999999999
+            "x": 2626,
+            "y": 1515.5075567037425
           },
           {
-            "x": 2783.3999999999996,
-            "y": 1378.699999999999
+            "x": 2600.3999999999996,
+            "y": 1515.5075567037425
           }
         ],
         "sides": [
           "right",
-          "left"
+          "right"
         ]
       },
       "customProperties": {
@@ -2471,31 +2269,31 @@
       "GUID": "11532111-6673-4743-a175-810d8cf58b0b",
       "hackoladeStyles": {
         "GUID": "5eba7b4e-afb2-44c4-bb8d-44834eef5e6f",
-        "autoPositioning": true,
+        "autoPositioning": false,
         "type": "Orthogonal",
         "thickness": 2,
         "color": "#79c4ff",
         "dataType": "",
         "shape": [
           {
-            "x": 2274.6000000000004,
-            "y": 1644.3000000000006
+            "x": 2047.6000000000004,
+            "y": 1477.8000000000006
           },
           {
-            "x": 2309.5,
-            "y": 1644.3000000000006
+            "x": 2002.6000000000004,
+            "y": 1477.8000000000006
           },
           {
-            "x": 2309.5,
-            "y": 1644.1999999999982
+            "x": 2002.6000000000004,
+            "y": 1698.2659219579948
           },
           {
-            "x": 2344.3999999999996,
-            "y": 1644.1999999999982
+            "x": 2048.3999999999996,
+            "y": 1698.2659219579948
           }
         ],
         "sides": [
-          "right",
+          "left",
           "left"
         ]
       },
@@ -2533,17 +2331,25 @@
         "dataType": "",
         "shape": [
           {
-            "x": 2541.651370644633,
-            "y": 1781.4000000000017
+            "x": 2052.4,
+            "y": 1616.4000000000017
           },
           {
-            "x": 2541.651370644633,
-            "y": 1704.1999999999982
+            "x": 2033.3999999999996,
+            "y": 1616.4000000000017
+          },
+          {
+            "x": 2033.3999999999996,
+            "y": 1698.2659219579948
+          },
+          {
+            "x": 2048.3999999999996,
+            "y": 1698.2659219579948
           }
         ],
         "sides": [
-          "top",
-          "bottom"
+          "left",
+          "left"
         ]
       },
       "customProperties": {
@@ -2581,32 +2387,24 @@
       "GUID": "8fc2b567-1578-4eb2-ade2-26c8daf6ce30",
       "hackoladeStyles": {
         "GUID": "14299785-8189-4077-b5b1-b12d3b4569d9",
-        "autoPositioning": true,
+        "autoPositioning": false,
         "type": "Orthogonal",
         "thickness": 2,
         "color": "#79c4ff",
         "dataType": "",
         "shape": [
           {
-            "x": 2741.799999999999,
-            "y": 1643.8999999999962
+            "x": 2177.1934065934056,
+            "y": 1860.3999999999962
           },
           {
-            "x": 2705.0999999999995,
-            "y": 1643.8999999999962
-          },
-          {
-            "x": 2705.0999999999995,
-            "y": 1644.1999999999982
-          },
-          {
-            "x": 2668.3999999999996,
-            "y": 1644.1999999999982
+            "x": 2177.1934065934056,
+            "y": 1804.1999999999982
           }
         ],
         "sides": [
-          "left",
-          "right"
+          "top",
+          "bottom"
         ]
       },
       "customProperties": {
@@ -2643,21 +2441,25 @@
         "dataType": "",
         "shape": [
           {
-            "x": 2302.3999999999996,
-            "y": 1765.5999999999976
+            "x": 2048.3999999999996,
+            "y": 1579.2000000000005
           },
           {
-            "x": 2515.2411866264247,
-            "y": 1765.5999999999976
+            "x": 2020.3999999999999,
+            "y": 1579.2000000000005
           },
           {
-            "x": 2515.2411866264247,
-            "y": 1704.1999999999982
+            "x": 2020.3999999999999,
+            "y": 1697.1864222139739
+          },
+          {
+            "x": 2048.3999999999996,
+            "y": 1697.1864222139739
           }
         ],
         "sides": [
-          "right",
-          "bottom"
+          "left",
+          "left"
         ]
       },
       "customProperties": {
@@ -2687,61 +2489,6 @@
       "GUID": "efedb60a-4116-4956-bcd4-9721dfbe0e02",
       "hackoladeStyles": {
         "GUID": "bb279173-547a-45f8-b009-756852357e53",
-        "autoPositioning": true,
-        "type": "Orthogonal",
-        "thickness": 2,
-        "color": "#79c4ff",
-        "dataType": "",
-        "shape": [
-          {
-            "x": 3352.86244229293,
-            "y": 1790.0615219710703
-          },
-          {
-            "x": 3378.7999999999975,
-            "y": 1790.0615219710703
-          },
-          {
-            "x": 3378.7999999999975,
-            "y": 1640.1000000000033
-          },
-          {
-            "x": 3353.7999999999975,
-            "y": 1640.1000000000033
-          }
-        ],
-        "sides": [
-          "right",
-          "right"
-        ]
-      },
-      "customProperties": {
-        "relationshipOnDelete": "CASCADE"
-      }
-    },
-    {
-      "name": "fk_user_user_id_to_client_user_id",
-      "relationshipType": "Foreign Key",
-      "parentField": [
-        [
-          "281a2c32-4480-4b24-9466-4feee7a232e7",
-          "c05dfac6-476e-4726-b53c-1852e54b9e24"
-        ]
-      ],
-      "parentCardinality": "1",
-      "childField": [
-        [
-          "a7655bad-c51e-4087-84f9-7585d50205ff",
-          "6268a443-6d22-41c1-aedc-53fa4fd3f4da"
-        ]
-      ],
-      "isActivated": true,
-      "childCardinality": "1..n",
-      "parentCollection": "281a2c32-4480-4b24-9466-4feee7a232e7",
-      "childCollection": "a7655bad-c51e-4087-84f9-7585d50205ff",
-      "GUID": "be21643b-4994-4eb1-9499-9048cd66921a",
-      "hackoladeStyles": {
-        "GUID": "8a7f2e19-b2ae-4627-9d70-8938edd2f5cb",
         "autoPositioning": false,
         "type": "Orthogonal",
         "thickness": 2,
@@ -2749,20 +2496,20 @@
         "dataType": "",
         "shape": [
           {
-            "x": 3353.7999999999975,
-            "y": 1615.6289885885044
+            "x": 2609.1481565786453,
+            "y": 1702.5615219710708
           },
           {
-            "x": 3415.9999999999986,
-            "y": 1615.6289885885044
+            "x": 2624.1481565786453,
+            "y": 1702.5615219710708
           },
           {
-            "x": 3415.9999999999986,
-            "y": 1392.5999999999988
+            "x": 2624.1481565786453,
+            "y": 1626.453339898425
           },
           {
-            "x": 2983.3999999999996,
-            "y": 1392.5999999999988
+            "x": 2591.7999999999975,
+            "y": 1626.453339898425
           }
         ],
         "sides": [
@@ -2797,32 +2544,28 @@
       "GUID": "7b124bb5-2e75-46cf-ba9a-ec88159f16dd",
       "hackoladeStyles": {
         "GUID": "29d8bea4-e778-4898-a272-74fbfd58ed56",
-        "autoPositioning": true,
+        "autoPositioning": false,
         "type": "Orthogonal",
         "thickness": 2,
         "color": "#79c4ff",
         "dataType": "",
         "shape": [
           {
-            "x": 3088.86244229293,
-            "y": 1755.5615219710703
+            "x": 2333.1481565786453,
+            "y": 1823.3999999999962
           },
           {
-            "x": 3050.8312211464645,
-            "y": 1755.5615219710703
+            "y": 1823.3999999999962,
+            "x": 2303.799999999999
           },
           {
-            "x": 3050.8312211464645,
-            "y": 1643.8999999999962
-          },
-          {
-            "x": 3012.799999999999,
-            "y": 1643.8999999999962
+            "x": 2303.799999999999,
+            "y": 1860.3999999999962
           }
         ],
         "sides": [
           "left",
-          "right"
+          "top"
         ]
       },
       "customProperties": {
@@ -2852,61 +2595,6 @@
       "GUID": "b0ec4053-3fb7-4a9a-8e7f-1f91154d5297",
       "hackoladeStyles": {
         "GUID": "5c07e105-ead6-4697-96ea-a3553de0bf5b",
-        "autoPositioning": true,
-        "type": "Orthogonal",
-        "thickness": 2,
-        "color": "#79c4ff",
-        "dataType": "",
-        "shape": [
-          {
-            "x": 3026.799999999997,
-            "y": 1824.1999999999998
-          },
-          {
-            "x": 3057.8312211464636,
-            "y": 1824.1999999999998
-          },
-          {
-            "x": 3057.8312211464636,
-            "y": 1824.5615219710703
-          },
-          {
-            "x": 3088.86244229293,
-            "y": 1824.5615219710703
-          }
-        ],
-        "sides": [
-          "right",
-          "left"
-        ]
-      },
-      "customProperties": {
-        "relationshipOnDelete": "CASCADE"
-      }
-    },
-    {
-      "name": "fk_clients_client_id_to_client_first_purchase_date_client_id",
-      "relationshipType": "Foreign Key",
-      "parentField": [
-        [
-          "a7655bad-c51e-4087-84f9-7585d50205ff",
-          "800d1171-8776-43a4-8cac-98e336bd7bb8"
-        ]
-      ],
-      "parentCardinality": "1",
-      "childField": [
-        [
-          "bf2aae05-8be6-4553-83be-15178500675f",
-          "0cb26c1a-e47a-47c8-b828-ba35f5468bdc"
-        ]
-      ],
-      "isActivated": true,
-      "childCardinality": "0..n",
-      "parentCollection": "a7655bad-c51e-4087-84f9-7585d50205ff",
-      "childCollection": "bf2aae05-8be6-4553-83be-15178500675f",
-      "GUID": "59c338d6-67e5-4fea-a7b9-cede0f0b3aa5",
-      "hackoladeStyles": {
-        "GUID": "a3df9e79-e151-45d4-9362-3d8dffc4c7ad",
         "autoPositioning": false,
         "type": "Orthogonal",
         "thickness": 2,
@@ -2914,17 +2602,25 @@
         "dataType": "",
         "shape": [
           {
-            "x": 3208.6123674911687,
-            "y": 1544.5999999999956
+            "x": 2610.799999999997,
+            "y": 1934.1999999999998
           },
           {
-            "x": 3208.6123674911687,
-            "y": 1595.6000000000033
+            "x": 2624.1481565786453,
+            "y": 1934.1999999999998
+          },
+          {
+            "x": 2624.1481565786453,
+            "y": 1717.5615219710708
+          },
+          {
+            "x": 2609.1481565786453,
+            "y": 1717.5615219710708
           }
         ],
         "sides": [
-          "bottom",
-          "top"
+          "right",
+          "right"
         ]
       },
       "customProperties": {
@@ -2961,25 +2657,17 @@
         "dataType": "",
         "shape": [
           {
-            "x": 2017.3999999999994,
-            "y": 1414.6
+            "x": 2330.3999999999996,
+            "y": 1249.7999999999988
           },
           {
-            "x": 1983.999999999999,
-            "y": 1414.6
-          },
-          {
-            "x": 1983.999999999999,
-            "y": 1470.1999999999987
-          },
-          {
-            "x": 2026.4000000000035,
-            "y": 1470.1999999999987
+            "x": 2300.4000000000033,
+            "y": 1249.7999999999988
           }
         ],
         "sides": [
           "left",
-          "left"
+          "right"
         ]
       },
       "customProperties": {
@@ -3005,11 +2693,6 @@
     "f6b00ccb-0af6-43a8-a731-b5de6fc245be": "campaign_id",
     "c6ac5d29-fc79-4968-82cb-b52cc76abd0e": "messages",
     "d8fc506b-805e-48a3-86b1-1b54fabeb62d": "fk_client_client_id_to_messages_client_id",
-    "0cb26c1a-e47a-47c8-b828-ba35f5468bdc": "client_id",
-    "a670e186-6391-4bbc-987a-737ac3c7fbe1": "first_purchase_date",
-    "bf2aae05-8be6-4553-83be-15178500675f": "client_first_purchase_date",
-    "0a48f645-307a-4e9f-8347-4aef251ac2a7": "fk_client_client_id_to_client_first_purchase_date_client_id",
-    "18c6dbd2-b194-4a41-b261-207de2ff271d": "fk_user_user_id_to_client_first_purchase_date_user_id",
     "3bef106a-2de4-4faf-a74a-38cc246f55a5": "friend1",
     "6b75160c-3468-4fe3-ac74-242fa70821ae": "friend2",
     "db1bddd0-3084-4005-a5ef-ed9d9d753b1d": "friends",
@@ -3057,11 +2740,8 @@
     "1a9b24c3-5289-4e1c-bbb4-8f09c417e5dd": "campaign_pk",
     "8b918d2b-77f3-46a6-992f-9d0f22c81bcf": "fk_campaigns_campaign_pk_to_campaign_subject_campaign_pk",
     "78fa0494-1c56-41f2-aabd-a39a5daff94d": "ab_test",
-    "cbd757de-b04c-48f3-82d8-f4e5c0d1f7f5": "user_device_id",
     "efedb60a-4116-4956-bcd4-9721dfbe0e02": "fk_client_client_id_to_message_send_client_id",
     "e49709cd-d544-46dd-8e68-3a906bada621": "email_provider",
-    "be21643b-4994-4eb1-9499-9048cd66921a": "fk_user_user_id_to_client_user_id",
-    "6268a443-6d22-41c1-aedc-53fa4fd3f4da": "user_id",
     "4a927715-4a93-4926-9bb0-9f7ae31e7ea5": "started_at",
     "92fea9eb-9e2b-44cf-90d8-f3ab4e4b7702": "platform",
     "486ad41f-156d-43de-aa3b-56afeafa6951": "id",
@@ -3082,9 +2762,9 @@
     "a74b92d5-e3bd-4a2f-9752-9e1aded0d0a1": "product_card_pk",
     "b0371fbc-9867-442f-a745-a8864a594cc3": "event_type",
     "d71b6dfb-9592-460d-bd12-29c7a695c64e": "event_time",
-    "59c338d6-67e5-4fea-a7b9-cede0f0b3aa5": "fk_clients_client_id_to_client_first_purchase_date_client_id",
     "16651dbc-18be-497c-9ce8-4977a7c81284": "fk_products_product_pk_to_product_cards_product_pk",
-    "2a9a1791-e927-4dd2-8e0d-a8e04976f50a": "channel"
+    "2a9a1791-e927-4dd2-8e0d-a8e04976f50a": "channel",
+    "7d4ac3be-3d4e-418c-b1d0-59582d79a862": "first_purchase_date"
   },
   "definitions": {
     "type": "definitions",
@@ -3111,7 +2791,7 @@
   "creationTS": "2025-02-28T13:38:32.275Z",
   "GUID": "6b0d81c1-eee1-4a95-8fd6-be5af8c1cbda",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-03-04T10:24:48.139Z",
+  "lastModifTS": "2025-03-06T19:28:03.944Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -3129,112 +2809,104 @@
         "erd": [
           {
             "GUID": "c068ecb4-3db4-4742-a187-137cc4658638",
-            "x": 2349,
-            "y": 1343.8,
-            "width": 292,
+            "x": 2323,
+            "y": 1333.8,
+            "width": 277,
             "height": 163,
             "color": {}
           },
           {
             "GUID": "f26d24d8-4990-479f-b432-0d758d2328b1",
-            "x": 2344.3999999999996,
-            "y": 1584.1999999999982,
-            "width": 324,
-            "height": 120,
+            "x": 2048.3999999999996,
+            "y": 1683.1999999999982,
+            "width": 273,
+            "height": 121,
             "color": {}
           },
           {
             "GUID": "c6ac5d29-fc79-4968-82cb-b52cc76abd0e",
-            "x": 2741.799999999999,
-            "y": 1600.3999999999962,
+            "x": 2046.7999999999988,
+            "y": 1860.3999999999962,
             "width": 271,
             "height": 87,
             "color": {}
           },
           {
-            "GUID": "bf2aae05-8be6-4553-83be-15178500675f",
-            "x": 3081.0000000000027,
-            "y": 1475.5999999999956,
-            "width": 267,
-            "height": 69,
-            "color": {}
-          },
-          {
             "GUID": "db1bddd0-3084-4005-a5ef-ed9d9d753b1d",
-            "x": 2758.199999999999,
-            "y": 1456.9999999999989,
-            "width": 248,
-            "height": 70,
+            "x": 2324.199999999999,
+            "y": 1546.9999999999989,
+            "width": 275,
+            "height": 60,
             "color": {}
           },
           {
             "GUID": "281a2c32-4480-4b24-9466-4feee7a232e7",
-            "x": 2783.3999999999996,
-            "y": 1352.199999999999,
-            "width": 200,
-            "height": 53,
+            "x": 2324.3999999999996,
+            "y": 1500.199999999999,
+            "width": 276,
+            "height": 42,
             "color": {}
           },
           {
             "GUID": "fb7e8757-a100-4c2d-aa2a-6c4572d1ca55",
-            "x": 2017.3999999999994,
-            "y": 1340.2,
+            "x": 2330.3999999999996,
+            "y": 1231.2,
             "width": 264,
             "height": 87,
             "color": {}
           },
           {
             "GUID": "a7655bad-c51e-4087-84f9-7585d50205ff",
-            "x": 3085.7999999999975,
-            "y": 1595.6000000000033,
-            "width": 268,
-            "height": 89,
+            "x": 2332.7999999999975,
+            "y": 1613.6000000000033,
+            "width": 259,
+            "height": 66,
             "color": {}
           },
           {
             "GUID": "b15e131c-53bf-4141-8628-93790ff631d6",
-            "x": 2002.6000000000001,
-            "y": 1564.8000000000006,
-            "width": 272,
-            "height": 159,
+            "x": 2047.6000000000004,
+            "y": 1336.8000000000006,
+            "width": 257,
+            "height": 156,
             "color": {}
           },
           {
             "GUID": "3aa178f9-a703-4c2b-ab76-9e73994436d9",
-            "x": 1990.3999999999999,
-            "y": 1732.2000000000005,
-            "width": 312,
-            "height": 176,
+            "x": 2048.3999999999996,
+            "y": 1498.2000000000005,
+            "width": 257,
+            "height": 97,
             "color": {}
           },
           {
             "GUID": "cb7b8c31-f6e3-4ee2-922b-281f8a400bca",
-            "x": 2356.4,
-            "y": 1781.4000000000017,
-            "width": 245,
+            "x": 2052.4,
+            "y": 1601.4000000000017,
+            "width": 256,
             "height": 69,
             "color": {}
           },
           {
             "GUID": "ecdea443-99fa-4965-8ec6-8b6f300009b9",
-            "x": 2713.799999999997,
-            "y": 1771.1999999999998,
-            "width": 313,
+            "x": 2336.799999999997,
+            "y": 1894.1999999999998,
+            "width": 274,
             "height": 106,
             "color": {}
           },
           {
             "GUID": "71a0e049-848e-4e9e-811b-187df9ba1fb7",
-            "x": 3088.86244229293,
-            "y": 1686.5615219710703,
-            "width": 264,
-            "height": 207,
+            "x": 2333.1481565786453,
+            "y": 1684.5615219710708,
+            "width": 276,
+            "height": 200,
             "color": {}
           },
           {
             "GUID": "888a4440-790e-467c-a1e9-03a28396c2d1",
-            "x": 2026.4000000000035,
-            "y": 1452.7999999999988,
+            "x": 2049.4000000000033,
+            "y": 1227.7999999999988,
             "width": 251,
             "height": 105,
             "color": {}
@@ -3248,8 +2920,8 @@
         },
         "buckets": [
           {
-            "x": 1943.999999999999,
-            "y": 1300.2,
+            "x": 1962.6000000000004,
+            "y": 1187.7999999999988,
             "GUID": "f3127c54-6891-44f5-9e7f-31814635dce6"
           }
         ],
@@ -3286,9 +2958,6 @@
             "GUID": "c6ac5d29-fc79-4968-82cb-b52cc76abd0e"
           },
           {
-            "GUID": "bf2aae05-8be6-4553-83be-15178500675f"
-          },
-          {
             "autoWidth": false,
             "autoHeight": false,
             "GUID": "db1bddd0-3084-4005-a5ef-ed9d9d753b1d"
@@ -3320,6 +2989,16 @@
             "autoWidth": false,
             "autoHeight": false,
             "GUID": "71a0e049-848e-4e9e-811b-187df9ba1fb7"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "b15e131c-53bf-4141-8628-93790ff631d6"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "cb7b8c31-f6e3-4ee2-922b-281f8a400bca"
           }
         ],
         "relationshipUpdateDisabled": false,

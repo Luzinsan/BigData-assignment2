@@ -125,3 +125,5 @@ dmypy.json
 
 *.csv
 cleaned_datasets/mongo/ver1/
+
+output/
