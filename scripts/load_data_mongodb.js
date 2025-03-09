@@ -56,6 +56,8 @@ db.events.createIndex({
 });
 
 
+
+
 db.createCollection("campaigns", {
     "capped": false,
     "validator": {
@@ -161,6 +163,8 @@ db.campaigns.createIndex({
 });
 
 
+
+
 db.createCollection("products", {
     "capped": false,
     "validator": {
@@ -208,6 +212,8 @@ db.products.createIndex({
     "name": "unique_product",
     "unique": true
 });
+
+
 
 
 db.createCollection("users", {
@@ -275,6 +281,8 @@ db.users.createIndex({
 });
 
 
+
+
 db.createCollection("messages", {
     "capped": false,
     "validator": {
@@ -333,6 +341,9 @@ db.createCollection("messages", {
                         },
                         "additionalProperties": false
                     }
+                },
+                "campaign_pk": {
+                    "bsonType": "string"
                 }
             },
             "additionalProperties": false,
