@@ -329,22 +329,19 @@ db.createCollection("messages", {
                     "items": {
                         "bsonType": "object",
                         "properties": {
-                            "behavior_type": {
+                            "type": {
                                 "bsonType": "string"
                             },
-                            "first_time_at": {
+                            "happened_first_time": {
                                 "bsonType": "string"
                             },
-                            "last_time_at": {
+                            "happened_last_time": {
                                 "bsonType": "string"
                             }
                         },
                         "additionalProperties": false
                     }
                 },
-                "campaign_pk": {
-                    "bsonType": "string"
-                }
             },
             "additionalProperties": false,
             "required": [
@@ -370,9 +367,9 @@ db.messages.createIndex({
     "name": "message",
     "unique": true
 });
-
-
-
+db.messages.createIndex({ "campaign_id": 1, "message_type": 1, "client_id": 1 })
+db.messages.createIndex({ "behaviors.type": 1 })
+db.messages.createIndex({ "user_id": 1 })
 
 db.createCollection("friends", {
     "capped": false,

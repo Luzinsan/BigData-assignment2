@@ -45,13 +45,14 @@ CREATE TABLE IF NOT EXISTS e_commerce.campaigns (
 ) TABLESPACE pg_default;
 
 
-COMMENT ON COLUMN e_commerce.campaigns.id IS E'Campaign ID';
-
 CREATE TABLE IF NOT EXISTS e_commerce.messages (
 	id bigserial PRIMARY KEY NOT NULL,
 	campaign_id bigint NOT NULL,
 	message_type varchar(52) NOT NULL,
-	CONSTRAINT unique_message UNIQUE (campaign_id, message_type),
+	channel varchar(48) NOT NULL,
+	created_at timestamp NOT NULL,
+	updated_at timestamp NOT NULL,
+	CONSTRAINT unique_message UNIQUE (campaign_id, message_type, channel),
 	CONSTRAINT fk_campaigns_id_to_messages_campaign_id FOREIGN KEY (campaign_id, message_type) REFERENCES e_commerce.campaigns (id, campaign_type) ON DELETE CASCADE
 ) TABLESPACE pg_default;
 
@@ -104,9 +105,6 @@ CREATE TABLE IF NOT EXISTS e_commerce.message_sent (
 	client_id bigint NOT NULL,
 	email_provider varchar,
 	platform varchar,
-	channel varchar(48) NOT NULL,
-	created_at timestamp NOT NULL,
-	updated_at timestamp NOT NULL,
 	sent_at timestamp NOT NULL,
 	CONSTRAINT fk_client_client_id_to_message_send_client_id FOREIGN KEY (client_id) REFERENCES e_commerce.clients (client_id) ON DELETE CASCADE,
 	CONSTRAINT fk_messages_id_to_message_sent_id FOREIGN KEY (id) REFERENCES e_commerce.messages (id) ON DELETE CASCADE
@@ -132,6 +130,6 @@ CREATE TABLE IF NOT EXISTS e_commerce.message_behaviors (
 \COPY campaign_bulks(campaign_pk,started_at,finished_at,total_count,warmup_mode,hour_limit,ab_test)  FROM 'output/psql/campaign_bulks.csv'  DELIMITER ','  CSV HEADER;
 \COPY campaign_subjects(campaign_pk,subject_length,subject_with_personalization,subject_with_deadline,subject_with_emoji,subject_with_bonuses,subject_with_discount,subject_with_saleout)  FROM 'output/psql/campaign_subjects.csv'  DELIMITER ','  CSV HEADER;
 \COPY campaign_triggers(campaign_pk, position)  FROM 'output/psql/campaign_triggers.csv'  DELIMITER ','  CSV HEADER;
-\COPY messages(id,campaign_id,message_type)  FROM 'output/psql/messages.csv'  DELIMITER ','  CSV HEADER;
-\COPY message_sent(message_id,id,client_id,email_provider,platform,channel,created_at,updated_at,sent_at)  FROM 'output/psql/message_sent.csv'  DELIMITER ','  CSV HEADER;
+\COPY messages(id,campaign_id,message_type,channel,created_at,updated_at)  FROM 'output/psql/messages.csv'  DELIMITER ','  CSV HEADER;
+\COPY message_sent(message_id,id,client_id,email_provider,platform,sent_at)  FROM 'output/psql/message_sent.csv'  DELIMITER ','  CSV HEADER;
 \COPY message_behaviors(message_id,type,happened_first_time,happened_last_time)  FROM 'output/psql/message_behavior.csv'  DELIMITER ','  CSV HEADER;
