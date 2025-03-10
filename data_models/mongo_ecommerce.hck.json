@@ -808,14 +808,6 @@
           "additionalItems": true,
           "error": {},
           "GUID": "9c8d99ec-d851-4dc9-8bcc-8c9b94b19d86"
-        },
-        {
-          "name": "campaign_pk",
-          "hackoladeMeta": {},
-          "isActivated": true,
-          "type": "string",
-          "GUID": "9b9d1a71-a58c-45c9-985b-47ef966b8fc9",
-          "error": {}
         }
       ],
       "definitions": {
@@ -1407,7 +1399,6 @@
     "9e3910f8-5ce9-4265-9d2b-3c40b810a040": "first_purchase_date",
     "eba9dadd-6ce4-4793-ad88-4bf791f4a503": "fk_users.devices.[0].client_id_to_messages.client_id",
     "924343ee-e9b3-4029-8162-a8d45ccd13a4": "client_device_id",
-    "9b9d1a71-a58c-45c9-985b-47ef966b8fc9": "campaign_pk",
     "a63b09c6-bf47-40a7-8ab9-82de63f1cde1": "fk_campaigns.campaign_type_to_messages.message_type"
   },
   "definitions": {
@@ -1433,7 +1424,7 @@
   "creationTS": "2025-03-04T11:22:59.734Z",
   "GUID": "b6d80bd1-b72c-45cc-94c5-bb3e8579bb04",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-03-08T19:48:23.085Z",
+  "lastModifTS": "2025-03-10T20:45:16.254Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
